@@ -1,6 +1,9 @@
+{ YOU TUBE - https://docs.github.com/en/github/getting-started-with-github/pushing-commits-to-a-remote-repository }
+{ GITHUB DOCS - https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line }
 1. Have an existing repository owned by anyone ( either you or someone else you'd like to contribute to) or, Create your own repository on GitHub
 
-2. Cloning a repository:
+2. { GITHUB DOCS - https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository }
+   Cloning a repository:
    When you create a repository on GitHub, it exists as a remote repository. You can clone your repository to create a local copy on your computer and sync between the two locations.
    Cloning can be done using 3 methods:
    a. using HTTPS CODE
@@ -28,7 +31,8 @@
 
 7. git branch -M main
 8. git remote add origin https://github.com/singhritesh750/repository_name.git" 
-9. Pushing commits to a remote repository:
+9. { GITHUB DOCS - https://docs.github.com/en/github/getting-started-with-github/pushing-commits-to-a-remote-repository }
+   Pushing commits to a remote repository:
    Use git push to push commits made on your LOCAL BRANCH to a REMOTE REPOSITORY.
    The git push command takes two arguments:
     1. REMOTE name, for example, origin
