@@ -1,1 +1,41 @@
-Have an existing repository owned by anyone ( either you or someone else you'd like to contribute to) or, Create your own repository on GitHub
+1. Have an existing repository owned by anyone ( either you or someone else you'd like to contribute to) or, Create your own repository on GitHub
+
+2. Cloning a repository:
+   When you create a repository on GitHub, it exists as a remote repository. You can clone your repository to create a local copy on your computer and sync between the two locations.
+   Cloning can be done using 3 methods:
+   a. using HTTPS CODE
+   b. using SSH CODE
+   c. using GitHub CLI CODE
+
+   Cloning a repository using the command line
+   1. On GitHub, navigate to the main page (username/repo_name) of the repository.
+   2. Above the list of files, click GREEN CLONE CODE.
+   3. To clone the repository USE ANY ONE OF THE CLONING METHODS i.e., using HTTPS, under "Clone with HTTPS", copy the link given there.
+   4. Open Git Bash or CMD
+   5. Change the current working directory to the location where you want the cloned directory to be present e.g., Desktop.
+   6. git clone [paste the URL copied in git] -> to create your local clone e.g., git clone https://github.com/singhritesh750/GITHUB-COMMANDS.git
+
+3. On your computer, move the file you'd like to upload to GitHub into the local directory that was created when you cloned the repository.
+4. Open Git Bash or CMD, Change the current working directory to your local repository.
+5. git add . -> Adds the file to your local repository and stages it for commit or in other words Stage the file for commit to your local repository
+   git reset HEAD [YOUR-FILE] -> To unstage a file
+6. git commit -m "Add whatever you want to show as content of README.md" -> Commit the file that you've staged in your local repository or Commits the tracked changes and 
+                                                                            prepares them to be pushed to a remote repository.
+   git reset --soft HEAD~1 -> To remove this commit and modify the file, use the command and commit and add the file again.
+
+*** NOTES: if Running "git push origin your-branch" to Push the changes in your local repository to GitHub, after the "6." command shows the error then go to "7." instead e.g.,
+           git push origin https://github.com/singhritesh750/repository_name.git -> fatal: invalid refspec 'https://github.com/singhritesh750/GITHUB-COMMANDS.git'
+
+7. git branch -M main
+8. git remote add origin https://github.com/singhritesh750/repository_name.git" 
+9. Pushing commits to a remote repository:
+   Use git push to push commits made on your LOCAL BRANCH to a REMOTE REPOSITORY.
+   The git push command takes two arguments:
+    1. REMOTE name, for example, origin
+    2. LOCAL name, for example, main
+    e.g., git push <REMOTENAME> <LOCALNAME> -> git push origin main -> to push your local changes to your online repository.
+   
+   ***NOTES: if Running "git push origin https://github.com/singhritesh750/repository_name.git" -> fatal: invalid refspec 'https://github.com/singhritesh750/GITHUB-COMMANDS.git' 
+             then run the below command.
+             
+   git push -u origin main -> to push the file into the Git. Here the file finally gets uploaded to git
